@@ -11,5 +11,9 @@ ENV ENABLE_TTS_INSTALL True
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
     GALAXY_CONFIG_CONDA_AUTO_INIT=True
 
+# Install tools (normally not needed, all needed tools must be in the base image)
+ADD tools.yaml $GALAXY_ROOT/tools.yaml
+RUN install-tools $GALAXY_ROOT/tools.yaml
+
 # Add a Galaxy tour
 ADD https://raw.githubusercontent.com/galaxyproject/galaxy-tours/master/advanced-galaxy-introduction/Introduction.yaml $GALAXY_ROOT/config/plugins/tours/advanced-galaxy-introduction.yaml
