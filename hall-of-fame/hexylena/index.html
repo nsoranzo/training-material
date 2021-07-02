@@ -48,33 +48,90 @@
                             <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material" title="View on GitHub">
-                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> View on GitHub
-                        </a>
-                    </li>
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/hall-of-fame/hexylena/" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/hall-of-fame/hexylena/" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/hexylena/&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/hexylena/&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/hexylena/&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/hexylena/&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/hexylena/&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2F%2Ftutorials%2F%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -90,6 +147,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -99,6 +159,20 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -220,6 +294,104 @@
 						
 					
 						
+						<li>
+							
+							
+							<a href="/training-material/topics/dev">
+								Development in Galaxy
+							</a>
+							/
+							<a href="/training-material//topics/dev/tutorials/data-source-integration/tutorial.html">
+							Data source integration
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/dev">
+								Development in Galaxy
+							</a>
+							/
+							<a href="/training-material//topics/dev/tutorials/tool-generators/tutorial.html">
+							ToolFactory: Generating Tools From Simple Scripts
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
 					
 						
 					
@@ -233,12 +405,192 @@
 						<li>
 							
 							
-							<a href="/training-material/topics/assembly">
-								Assembly
+							<a href="/training-material/topics/galaxy-interface">
+								Using Galaxy and Managing your Data
 							</a>
 							/
-							<a href="/training-material//topics/assembly/tutorials/ecoli_comparison/tutorial.html">
-							Making sense of a newly assembled genome
+							<a href="/training-material//topics/galaxy-interface/tutorials/upload-rules/tutorial.html">
+							Rule Based Uploader
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/galaxy-interface">
+								Using Galaxy and Managing your Data
+							</a>
+							/
+							<a href="/training-material//topics/galaxy-interface/tutorials/name-tags/tutorial.html">
+							Name tags for following complex histories
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/galaxy-interface">
+								Using Galaxy and Managing your Data
+							</a>
+							/
+							<a href="/training-material//topics/galaxy-interface/tutorials/history/tutorial.html">
+							Understanding Galaxy history system
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/galaxy-interface">
+								Using Galaxy and Managing your Data
+							</a>
+							/
+							<a href="/training-material//topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html">
+							Using Workflow Parameters
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/galaxy-interface">
+								Using Galaxy and Managing your Data
+							</a>
+							/
+							<a href="/training-material//topics/galaxy-interface/tutorials/download-delete-data/tutorial.html">
+							Downloading and Deleting Data in Galaxy
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/galaxy-interface">
+								Using Galaxy and Managing your Data
+							</a>
+							/
+							<a href="/training-material//topics/galaxy-interface/tutorials/upload-rules-advanced/tutorial.html">
+							Rule Based Uploader: Advanced
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/galaxy-interface">
+								Using Galaxy and Managing your Data
+							</a>
+							/
+							<a href="/training-material//topics/galaxy-interface/tutorials/search/tutorial.html">
+							Searching Your History
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/ansible-galaxy/tutorial.html">
+							Galaxy Installation with Ansible
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/jenkins/tutorial.html">
+							Automation with Jenkins
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/external-auth/tutorial.html">
+							External Authentication
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/connect-to-compute-cluster/tutorial.html">
+							Connecting Galaxy to a compute cluster
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/interactive-tools/tutorial.html">
+							Galaxy Interactive Tools
 							</a>
 						</li>
 						
@@ -249,12 +601,166 @@
 						<li>
 							
 							
-							<a href="/training-material/topics/assembly">
-								Assembly
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/assembly/tutorials/debruijn-graph-assembly/tutorial.html">
-							De Bruijn Graph Assembly
+							<a href="/training-material//topics/admin/tutorials/singularity/tutorial.html">
+							Use Singularity containers for running Galaxy jobs
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/terraform/tutorial.html">
+							Deploying a compute cluster in OpenStack via Terraform
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/tiaas/tutorial.html">
+							Training Infrastructure as a Service (TIaaS)
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/job-destinations/tutorial.html">
+							Mapping Jobs to Destinations
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/ansible/tutorial.html">
+							Ansible
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
+							Running Jobs on Remote Resources with Pulsar
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/monitoring/tutorial.html">
+							Galaxy Monitoring with Telegraf and Grafana
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/data-library/tutorial.html">
+							Data Libraries
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/object-store/tutorial.html">
+							Distributed Object Storage
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/gxadmin/tutorial.html">
+							Galaxy Monitoring with gxadmin
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/reports/tutorial.html">
+							Galaxy Monitoring with Reports
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/cvmfs-manual/tutorial.html">
+							Reference Data with CVMFS without Ansible
 							</a>
 						</li>
 						
@@ -265,14 +771,136 @@
 						<li>
 							
 							
-							<a href="/training-material/topics/instructors">
-								Teaching and Hosting Galaxy training
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/instructors/tutorials/running-workshop/tutorial.html">
-							Running a workshop as instructor
+							<a href="/training-material//topics/admin/tutorials/tool-management/tutorial.html">
+							Galaxy Tool Management with Ephemeris
 							</a>
 						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/cvmfs/tutorial.html">
+							Reference Data with CVMFS
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/contributing">
+								Contributing to the Galaxy Training Material
+							</a>
+							/
+							<a href="/training-material//topics/contributing/tutorials/admin-knitting/tutorial.html">
+							Updating diffs in admin training
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/contributing">
+								Contributing to the Galaxy Training Material
+							</a>
+							/
+							<a href="/training-material//topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">
+							Creating content in Markdown
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/contributing">
+								Contributing to the Galaxy Training Material
+							</a>
+							/
+							<a href="/training-material//topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">
+							Tools, Data, and Workflows for tutorials
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/contributing">
+								Contributing to the Galaxy Training Material
+							</a>
+							/
+							<a href="/training-material//topics/contributing/tutorials/create-new-tutorial/tutorial.html">
+							Creating a new tutorial
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/contributing">
+								Contributing to the Galaxy Training Material
+							</a>
+							/
+							<a href="/training-material//topics/contributing/tutorials/slides-with-video/tutorial.html">
+							Adding auto-generated video to your slides
+							</a>
+						</li>
+						
+					
 						
 					
 						
@@ -319,6 +947,140 @@
 						</li>
 						
 					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/instructors">
+								Teaching and Hosting Galaxy training
+							</a>
+							/
+							<a href="/training-material//topics/instructors/tutorials/running-workshop/tutorial.html">
+							Running a workshop as instructor
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/visualisation">
+								Visualisation
+							</a>
+							/
+							<a href="/training-material//topics/visualisation/tutorials/circos/tutorial.html">
+							Visualisation with Circos
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/visualisation">
+								Visualisation
+							</a>
+							/
+							<a href="/training-material//topics/visualisation/tutorials/jbrowse/tutorial.html">
+							Genomic Data Visualisation with JBrowse
+							</a>
+						</li>
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/assembly">
+								Assembly
+							</a>
+							/
+							<a href="/training-material//topics/assembly/tutorials/mrsa-nanopore/tutorial.html">
+							Genome Assembly of MRSA using Oxford Nanopore MinION Data
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/assembly">
+								Assembly
+							</a>
+							/
+							<a href="/training-material//topics/assembly/tutorials/debruijn-graph-assembly/tutorial.html">
+							De Bruijn Graph Assembly
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/assembly">
+								Assembly
+							</a>
+							/
+							<a href="/training-material//topics/assembly/tutorials/mrsa-illumina/tutorial.html">
+							Genome Assembly of MRSA using Illumina MiSeq Data
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/assembly">
+								Assembly
+							</a>
+							/
+							<a href="/training-material//topics/assembly/tutorials/ecoli_comparison/tutorial.html">
+							Making sense of a newly assembled genome
+							</a>
+						</li>
 						
 					
 						
@@ -424,424 +1186,6 @@
 						
 					
 						
-						<li>
-							
-							
-							<a href="/training-material/topics/dev">
-								Development in Galaxy
-							</a>
-							/
-							<a href="/training-material//topics/dev/tutorials/data-source-integration/tutorial.html">
-							Data source integration
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/galaxy-interface">
-								Using Galaxy and Managing your Data
-							</a>
-							/
-							<a href="/training-material//topics/galaxy-interface/tutorials/search/tutorial.html">
-							Searching Your History
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/galaxy-interface">
-								Using Galaxy and Managing your Data
-							</a>
-							/
-							<a href="/training-material//topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html">
-							Using Workflow Parameters
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/galaxy-interface">
-								Using Galaxy and Managing your Data
-							</a>
-							/
-							<a href="/training-material//topics/galaxy-interface/tutorials/name-tags/tutorial.html">
-							Name tags for following complex histories
-							</a>
-						</li>
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/galaxy-interface">
-								Using Galaxy and Managing your Data
-							</a>
-							/
-							<a href="/training-material//topics/galaxy-interface/tutorials/upload-rules-advanced/tutorial.html">
-							Rule Based Uploader: Advanced
-							</a>
-						</li>
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/galaxy-interface">
-								Using Galaxy and Managing your Data
-							</a>
-							/
-							<a href="/training-material//topics/galaxy-interface/tutorials/upload-rules/tutorial.html">
-							Rule Based Uploader
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/galaxy-interface">
-								Using Galaxy and Managing your Data
-							</a>
-							/
-							<a href="/training-material//topics/galaxy-interface/tutorials/download-delete-data/tutorial.html">
-							Downloading and Deleting Data in Galaxy
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/galaxy-interface">
-								Using Galaxy and Managing your Data
-							</a>
-							/
-							<a href="/training-material//topics/galaxy-interface/tutorials/history/tutorial.html">
-							Understanding Galaxy history system
-							</a>
-						</li>
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/tiaas/tutorial.html">
-							Training Infrastructure as a Service (TIaaS)
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/ansible-galaxy/tutorial.html">
-							Galaxy Installation with Ansible
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/ansible/tutorial.html">
-							Ansible
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/reports/tutorial.html">
-							Galaxy Monitoring with Reports
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/cvmfs/tutorial.html">
-							Reference Data with CVMFS
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/interactive-tools/tutorial.html">
-							Galaxy Interactive Tools
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/object-store/tutorial.html">
-							Distributed Object Storage
-							</a>
-						</li>
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/singularity/tutorial.html">
-							Use Singularity containers for running Galaxy jobs
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/jenkins/tutorial.html">
-							Automation with Jenkins
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/connect-to-compute-cluster/tutorial.html">
-							Connecting Galaxy to a compute cluster
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/tool-management/tutorial.html">
-							Galaxy Tool Management with Ephemeris
-							</a>
-						</li>
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
-							Running Jobs on Remote Resources with Pulsar
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/cvmfs-manual/tutorial.html">
-							Reference Data with CVMFS without Ansible
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/gxadmin/tutorial.html">
-							Galaxy Monitoring with gxadmin
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/job-destinations/tutorial.html">
-							Mapping Jobs to Destinations
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/job-metrics/tutorial.html">
-							Recording Job Metrics
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/monitoring/tutorial.html">
-							Galaxy Monitoring with Telegraf and Grafana
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/external-auth/tutorial.html">
-							External Authentication
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/data-library/tutorial.html">
-							Data Libraries
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/terraform/tutorial.html">
-							Deploying a compute cluster in OpenStack via Terraform
-							</a>
-						</li>
-						
-					
-						
 					
 						
 					
@@ -877,164 +1221,14 @@
 						<li>
 							
 							
-							<a href="/training-material/topics/visualisation">
-								Visualisation
+							<a href="/training-material/topics/genome-annotation">
+								Genome Annotation
 							</a>
 							/
-							<a href="/training-material//topics/visualisation/tutorials/jbrowse/tutorial.html">
-							Genomic Data Visualisation with JBrowse
+							<a href="/training-material//topics/genome-annotation/tutorials/apollo/tutorial.html">
+							Refining Genome Annotations with Apollo
 							</a>
 						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/visualisation">
-								Visualisation
-							</a>
-							/
-							<a href="/training-material//topics/visualisation/tutorials/circos/tutorial.html">
-							Visualisation with Circos
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/contributing">
-								Contributing to the Galaxy Training Material
-							</a>
-							/
-							<a href="/training-material//topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">
-							Creating content in Markdown
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/contributing">
-								Contributing to the Galaxy Training Material
-							</a>
-							/
-							<a href="/training-material//topics/contributing/tutorials/create-new-tutorial/tutorial.html">
-							Creating a new tutorial
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/contributing">
-								Contributing to the Galaxy Training Material
-							</a>
-							/
-							<a href="/training-material//topics/contributing/tutorials/slides-with-video/tutorial.html">
-							Adding auto-generated video to your slides
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/contributing">
-								Contributing to the Galaxy Training Material
-							</a>
-							/
-							<a href="/training-material//topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">
-							Tools, Data, and Workflows for tutorials
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
 						
 					
 						
@@ -1072,14 +1266,6 @@
 						
 					
 						
-					
-						
-					
-						
-					
-						
-					
-						
 						<li>
 							
 							
@@ -1093,14 +1279,12 @@
 						</li>
 						
 					
+						
+					
 					</ul>
 
 					<h2>Slides</h2>
 					<ul>
-					
-						
-					
-						
 					
 						
 					
@@ -1125,17 +1309,7 @@
 						
 					
 						
-						<li>
-							
-							
-							<a href="/training-material/topics/genome-annotation">
-								Genome Annotation
-							</a>
-							/
-							<a href="/training-material//topics/genome-annotation/slides/introduction.html">
-							Introduction to Genome Annotation
-							</a>
-						</li>
+					
 						
 					
 						
@@ -1159,6 +1333,22 @@
 						
 					
 						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/genome-annotation">
+								Genome Annotation
+							</a>
+							/
+							<a href="/training-material//topics/genome-annotation/slides/introduction.html">
+							Introduction to Genome Annotation
+							</a>
+						</li>
+						
+					
+						
 						<li>
 							
 							
@@ -1170,30 +1360,6 @@
 							Introduction to Galaxy
 							</a>
 						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
 						
 					
 						
@@ -1235,6 +1401,36 @@
 						
 					
 						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
 						<li>
 							
 							
@@ -1242,12 +1438,68 @@
 								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/admin/tutorials/ansible/slides.html">
-							Ansible
+							<a href="/training-material//topics/admin/tutorials/database/slides.html">
+							Galactic Database
 							</a>
 						</li>
 						
 					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/connect-to-compute-cluster/slides.html">
+							Connecting Galaxy to a compute cluster
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/empathy/slides.html">
+							Empathy
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/general-monitoring/slides.html">
+							Galaxy Monitoring
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/maintenance/slides.html">
+							Server Maintenance and Backups
+							</a>
+						</li>
 						
 					
 						
@@ -1265,18 +1517,6 @@
 						
 					
 						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/cvmfs/slides.html">
-							Reference Data with CVMFS
-							</a>
-						</li>
-						
 					
 						
 					
@@ -1288,10 +1528,12 @@
 								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/admin/tutorials/object-store/slides.html">
-							Storage Management
+							<a href="/training-material//topics/admin/tutorials/terraform/slides.html">
+							Terraform
 							</a>
 						</li>
+						
+					
 						
 					
 						
@@ -1311,20 +1553,6 @@
 						
 					
 						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/connect-to-compute-cluster/slides.html">
-							Connecting Galaxy to a compute cluster
-							</a>
-						</li>
-						
-					
-						
 					
 						
 						<li>
@@ -1334,8 +1562,8 @@
 								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/admin/tutorials/tool-management/slides.html">
-							Galaxy Tool Management with Ephemeris
+							<a href="/training-material//topics/admin/tutorials/ansible/slides.html">
+							Ansible
 							</a>
 						</li>
 						
@@ -1350,6 +1578,48 @@
 							/
 							<a href="/training-material//topics/admin/tutorials/pulsar/slides.html">
 							Running Jobs on Remote Resources with Pulsar
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/monitoring/slides.html">
+							Galaxy Monitoring with Telegraf and Grafana
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/data-library/slides.html">
+							Storage Management
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/object-store/slides.html">
+							Storage Management
 							</a>
 						</li>
 						
@@ -1378,56 +1648,8 @@
 								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/admin/tutorials/maintenance/slides.html">
-							Server Maintenance and Backups
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/monitoring/slides.html">
-							Galaxy Monitoring with Telegraf and Grafana
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/empathy/slides.html">
-							Empathy
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/data-library/slides.html">
-							Storage Management
+							<a href="/training-material//topics/admin/tutorials/users-groups-quotas/slides.html">
+							User, Group and Quota managment
 							</a>
 						</li>
 						
@@ -1454,8 +1676,8 @@
 								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/admin/tutorials/terraform/slides.html">
-							Terraform
+							<a href="/training-material//topics/admin/tutorials/tool-management/slides.html">
+							Galaxy Tool Management with Ephemeris
 							</a>
 						</li>
 						
@@ -1468,84 +1690,10 @@
 								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/admin/tutorials/users-groups-quotas/slides.html">
-							User, Group and Quota managment
+							<a href="/training-material//topics/admin/tutorials/cvmfs/slides.html">
+							Reference Data with CVMFS
 							</a>
 						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/general-monitoring/slides.html">
-							Galaxy Monitoring
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/database/slides.html">
-							Galactic Database
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/visualisation">
-								Visualisation
-							</a>
-							/
-							<a href="/training-material//topics/visualisation/tutorials/jbrowse/slides.html">
-							JBrowse
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/visualisation">
-								Visualisation
-							</a>
-							/
-							<a href="/training-material//topics/visualisation/tutorials/circos/slides.html">
-							Circos
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
 						
 					
 						
@@ -1573,6 +1721,76 @@
 						
 					
 						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/visualisation">
+								Visualisation
+							</a>
+							/
+							<a href="/training-material//topics/visualisation/tutorials/circos/slides.html">
+							Circos
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/visualisation">
+								Visualisation
+							</a>
+							/
+							<a href="/training-material//topics/visualisation/tutorials/jbrowse/slides.html">
+							JBrowse
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/genome-annotation">
+								Genome Annotation
+							</a>
+							/
+							<a href="/training-material//topics/genome-annotation/tutorials/apollo/slides.html">
+							Refining Genome Annotations with Apollo
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
 						<li>
 							
 							
@@ -1584,6 +1802,8 @@
 							A Short Introduction to Galaxy
 							</a>
 						</li>
+						
+					
 						
 					
 					</ul>
@@ -1607,11 +1827,415 @@ var topics = [
 	
 
 	
+		
+		
+		"Development in Galaxy",
+	
+
+	
+
+	
+
+	
+		
+		
+		"Development in Galaxy",
+	
+
+	
 
 	
 
 	
 
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Using Galaxy and Managing your Data",
+	
+
+	
+		
+		
+		"Using Galaxy and Managing your Data",
+	
+
+	
+		
+		
+		"Using Galaxy and Managing your Data",
+	
+
+	
+		
+		
+		"Using Galaxy and Managing your Data",
+	
+
+	
+		
+		
+		"Using Galaxy and Managing your Data",
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Using Galaxy and Managing your Data",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Using Galaxy and Managing your Data",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Contributing to the Galaxy Training Material",
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Contributing to the Galaxy Training Material",
+	
+
+	
+		
+		
+		"Contributing to the Galaxy Training Material",
+	
+
+	
+		
+		
+		"Contributing to the Galaxy Training Material",
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Contributing to the Galaxy Training Material",
+	
+
+	
+
+	
+		
+		
+		"Teaching and Hosting Galaxy training",
+	
+
+	
+		
+		
+		"Teaching and Hosting Galaxy training",
+	
+
+	
+
+	
+		
+		
+		"Teaching and Hosting Galaxy training",
+	
+
+	
+		
+		
+		"Teaching and Hosting Galaxy training",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Visualisation",
+	
+
+	
+		
+		
+		"Visualisation",
 	
 
 	
@@ -1625,6 +2249,14 @@ var topics = [
 	
 
 	
+
+	
+		
+		
+		"Assembly",
+	
+
+	
 		
 		
 		"Assembly",
@@ -1633,31 +2265,11 @@ var topics = [
 	
 
 	
-		
-		
-		"Teaching and Hosting Galaxy training",
-	
 
 	
 		
 		
-		"Teaching and Hosting Galaxy training",
-	
-
-	
-		
-		
-		"Teaching and Hosting Galaxy training",
-	
-
-	
-
-	
-		
-		
-		"Teaching and Hosting Galaxy training",
-	
-
+		"Assembly",
 	
 
 	
@@ -1755,276 +2367,6 @@ var topics = [
 	
 
 	
-		
-		
-		"Development in Galaxy",
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Using Galaxy and Managing your Data",
-	
-
-	
-		
-		
-		"Using Galaxy and Managing your Data",
-	
-
-	
-		
-		
-		"Using Galaxy and Managing your Data",
-	
-
-	
-
-	
-		
-		
-		"Using Galaxy and Managing your Data",
-	
-
-	
-
-	
-		
-		
-		"Using Galaxy and Managing your Data",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Using Galaxy and Managing your Data",
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Using Galaxy and Managing your Data",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Visualisation",
-	
-
-	
-		
-		
-		"Visualisation",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 
 	
 
@@ -2046,54 +2388,20 @@ var topics = [
 
 	
 
-	
-		
-		
-		"Contributing to the Galaxy Training Material",
 	
 
 	
 
 	
 
-	
-		
-		
-		"Contributing to the Galaxy Training Material",
 	
 
-	
-		
-		
-		"Contributing to the Galaxy Training Material",
 	
 
 	
 		
 		
-		"Contributing to the Galaxy Training Material",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
+		"Genome Annotation",
 	
 
 	
@@ -2123,23 +2431,13 @@ var topics = [
 	
 
 	
-
-	
-
-	
-
-	
-
-	
 		
 		
 		"Introduction to Galaxy Analyses",
 	
 
-
 	
 
-	
 
 	
 
@@ -2153,6 +2451,24 @@ var topics = [
 		
 		
 		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+		
+		
+		"Visualisation",
+	
+
+	
+
+	
+
+	
+
 	
 
 	
@@ -2164,43 +2480,7 @@ var topics = [
 	
 		
 		
-		"Visualisation",
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
 		"Introduction to Galaxy Analyses",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
 	
 
 	
@@ -2234,79 +2514,27 @@ var topics = [
 	
 
 	
-		
-		
-		"Galaxy Server administration",
+
+	
+
 	
 
 	
 
 	
-		
-		
-		"Galaxy Server administration",
-	
 
 	
-		
-		
-		"Galaxy Server administration",
+
 	
 
 	
 
 	
-		
-		
-		"Galaxy Server administration",
-	
 
 	
 
 	
-		
-		
-		"Galaxy Server administration",
-	
 
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
 	
 
 	
@@ -2321,10 +2549,6 @@ var topics = [
 		"Galaxy Server administration",
 	
 
-	
-		
-		
-		"Galaxy Server administration",
 	
 
 	
@@ -2362,29 +2586,83 @@ var topics = [
 	
 
 	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
 
 	
 		
 		
-		"Visualisation",
+		"Galaxy Server administration",
+	
+
 	
 
 	
 		
 		
-		"Visualisation",
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
 	
 
 	
 
 	
-
+		
+		
+		"Galaxy Server administration",
 	
 
 	
-
+		
+		
+		"Galaxy Server administration",
 	
 
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
 	
 
 	
@@ -2404,9 +2682,57 @@ var topics = [
 	
 
 	
+
+	
+		
+		
+		"Visualisation",
+	
+
+	
+		
+		
+		"Visualisation",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Genome Annotation",
+	
+
+	
+
+	
+
+	
 		
 		
 		"Introduction to Galaxy Analyses",
+	
+
 	
 
 ];
@@ -2472,6 +2798,7 @@ var chart = new Chart(ctx, {
 
 <footer>
     <div class="container">
+        <br><br>
         <p>
             The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
             provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
@@ -2479,7 +2806,7 @@ var chart = new Chart(ctx, {
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7d0753c4b7aee25b15b214e174e1f43ca9445fb">c7d0753c4b7aee25b15b214e174e1f43ca9445fb</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/35cc8a32eb3bd862f764d23651d22abb12ec9681">35cc8a32eb3bd862f764d23651d22abb12ec9681</a></p>
     </div>
 </footer>
 
