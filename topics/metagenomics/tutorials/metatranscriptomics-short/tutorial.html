@@ -18,15 +18,30 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Metatranscriptomics analysis using microbiome RNA-seq data (short)" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:20 +0000" />
+<meta name="DC.creator" content="Pratik Jagtap" />
+<meta name="DC.creator" content="Subina Mehta" />
+<meta name="DC.creator" content="Ray Sajulga" />
+<meta name="DC.creator" content="Bérénice Batut" />
+<meta name="DC.creator" content="Emma Leith" />
+<meta name="DC.creator" content="Praveen Kumar" />
+<meta name="DC.creator" content="Saskia Hiltemann" />
+
         
         
         
         
         
         <meta name="description" content="Metagenomics is a discipline that enables the genomic stu..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Metatranscriptomics analysis using microbiome RNA-seq dat..." />
         <meta property="og:description" content="Metagenomics is a discipline that enables the genomic stu..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -49,6 +64,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -104,41 +154,6 @@
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
             </a>
         
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
 
         <div class="dropdown-item">
             <div>
@@ -237,7 +252,11 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "accessMode": [
     "textual",
     "visual"
@@ -254,10 +273,10 @@
     "alternativeText",
     "tableOfContents"
   ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -270,7 +289,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:20 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Metatranscriptomics analysis using microbiome RNA-seq data (short)",
   "interactivityType": "mixed",
@@ -295,27 +314,28 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Metagenomics",
     "description": "Metagenomics is a discipline that enables the genomic study of uncultured microorganisms",
     "url": "https://training.galaxyproject.org//training-material/topics/metagenomics/"
   },
-  "courseCode": "metagenomics / metatranscriptomics-short / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Metatranscriptomics analysis using microbiome RNA-seq data (short)' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html",
   "timeRequired": "PT3H",
-  "keywords": "metatranscriptomics",
+  "keywords": "metagenomics, metatranscriptomics",
   "description": "The questions this  addresses are:\n - How to analyze metatranscriptomics data?\"\n - What information can be extracted of metatranscriptomics data?\n - How to assign taxa and function to the identified sequences?\n\n\\nThe objectives are:\n - Choose the best approach to analyze metatranscriptomics data\n - Understand the functional microbiome characterization using metatranscriptomic results\n - Understand where metatranscriptomics fits in 'multi-omic' analysis of microbiomes\n - Visualise a community structure\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
@@ -327,67 +347,314 @@
       }
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Pratik Jagtap"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pratikdjagtap/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pratikdjagtap/",
+      "name": "Pratik Jagtap",
+      "image": "https://avatars.githubusercontent.com/pratikdjagtap",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Subina Mehta"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/subinamehta/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/subinamehta/",
+      "name": "Subina Mehta",
+      "image": "https://avatars.githubusercontent.com/subinamehta",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9818-0537",
+      "orcid": "https://orcid.org/0000-0001-9818-0537"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Ray Sajulga"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/jraysajulga/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/jraysajulga/",
+      "name": "Ray Sajulga",
+      "image": "https://avatars.githubusercontent.com/jraysajulga",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Bérénice Batut"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "name": "Bérénice Batut",
+      "image": "https://avatars.githubusercontent.com/bebatut",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9852-1987",
+      "orcid": "https://orcid.org/0000-0001-9852-1987"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Emma Leith"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/emmaleith/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/emmaleith/",
+      "name": "Emma Leith",
+      "image": "https://avatars.githubusercontent.com/emmaleith",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Praveen Kumar"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pravs3683/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pravs3683/",
+      "name": "Praveen Kumar",
+      "image": "https://avatars.githubusercontent.com/pravs3683",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Pratik Jagtap"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pratikdjagtap/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pratikdjagtap/",
+      "name": "Pratik Jagtap",
+      "image": "https://avatars.githubusercontent.com/pratikdjagtap",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Subina Mehta"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/subinamehta/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/subinamehta/",
+      "name": "Subina Mehta",
+      "image": "https://avatars.githubusercontent.com/subinamehta",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9818-0537",
+      "orcid": "https://orcid.org/0000-0001-9818-0537"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Ray Sajulga"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/jraysajulga/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/jraysajulga/",
+      "name": "Ray Sajulga",
+      "image": "https://avatars.githubusercontent.com/jraysajulga",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Bérénice Batut"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "name": "Bérénice Batut",
+      "image": "https://avatars.githubusercontent.com/bebatut",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9852-1987",
+      "orcid": "https://orcid.org/0000-0001-9852-1987"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Emma Leith"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/emmaleith/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/emmaleith/",
+      "name": "Emma Leith",
+      "image": "https://avatars.githubusercontent.com/emmaleith",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Praveen Kumar"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pravs3683/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pravs3683/",
+      "name": "Praveen Kumar",
+      "image": "https://avatars.githubusercontent.com/pravs3683",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     }
   ],
   "about": [
@@ -405,7 +672,7 @@
       "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_3174"
     }
   ],
-  "skillLevel": "Introductory"
+  "educationalLevel": "Beginner"
 }
 </script>
 
@@ -413,30 +680,39 @@
     <h1 data-toc-skip>Metatranscriptomics analysis using microbiome RNA-seq data (short)</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/pratikdjagtap/" class="contributor-badge contributor-pratikdjagtap"><img src="https://avatars.githubusercontent.com/pratikdjagtap?s=27" alt="Avatar">Pratik Jagtap</a>
+
 
 
 <a href="/training-material/hall-of-fame/subinamehta/" class="contributor-badge contributor-subinamehta"><img src="https://avatars.githubusercontent.com/subinamehta?s=27" alt="Avatar">Subina Mehta</a>
 
 
+
 <a href="/training-material/hall-of-fame/jraysajulga/" class="contributor-badge contributor-jraysajulga"><img src="https://avatars.githubusercontent.com/jraysajulga?s=27" alt="Avatar">Ray Sajulga</a>
+
 
 
 <a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a>
 
 
+
 <a href="/training-material/hall-of-fame/emmaleith/" class="contributor-badge contributor-emmaleith"><img src="https://avatars.githubusercontent.com/emmaleith?s=27" alt="Avatar">Emma Leith</a>
+
 
 
 <a href="/training-material/hall-of-fame/pravs3683/" class="contributor-badge contributor-pravs3683"><img src="https://avatars.githubusercontent.com/pravs3683?s=27" alt="Avatar">Praveen Kumar</a>
 
 
+
 <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>  Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -527,7 +803,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" href="https://zenodo.org/record/4776250">
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/4776250">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -552,13 +828,40 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -568,8 +871,6 @@
             </a>
         </li>
     
-    
-        
     
         
     
@@ -690,6 +991,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
@@ -707,6 +1010,12 @@
     
         
     
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
         
     
         
@@ -741,7 +1050,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 
 <h1 id="overview">Overview</h1>
@@ -849,7 +1158,7 @@ https://zenodo.org/record/4776250/files/T1A_reverse.fastqsanger
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
       <!--SNIPPET-->
       <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
 
@@ -929,7 +1238,7 @@ In this tutorial we use similar tools as described in the tutorial <a href="/tra
   <li><a href="https://cutadapt.readthedocs.io/en/stable/guide.html">Cutadapt</a> for trimming and filtering</li>
 </ul>
 
-<p>For more information about how to interpret the plots generated by FastQC and MultiQC, please see <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html#assess-quality-with-fastqc">this section</a> in our dedicated Quality Control Tutorial.</p>
+<p>For more information about how to interpret the plots generated by FastQC and MultiQC, please see <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html#assess-quality-with-fastqc---short--long-reads">this section</a> in our dedicated Quality Control Tutorial.</p>
 
 <blockquote class="question">
   <h3 id="question-questions"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
@@ -1799,14 +2108,17 @@ Hungateiclostridium	94.67418	Hungateiclostridium_thermocellum	94.67418	UniRef90_
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/metagenomics/faqs/">FAQ page for the Metagenomics topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/metagenomics/faqs/">FAQ page for the Metagenomics topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                
 
                 
                 <h1 data-toc-skip>Useful literature</h1>
                 <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/metagenomics#references">here</a>.</p>
                 
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -1822,7 +2134,9 @@ Hungateiclostridium	94.67418	Hungateiclostridium_thermocellum	94.67418	UniRef90_
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -1851,8 +2165,6 @@ Hungateiclostridium	94.67418	Hungateiclostridium_thermocellum	94.67418	UniRef90_
                         });
                     })(window, document);
                 </script>
-
-
 
                 <h1>Citing this Tutorial</h1>
                 <p>
@@ -1896,6 +2208,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

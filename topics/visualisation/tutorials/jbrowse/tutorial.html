@@ -18,15 +18,26 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Genomic Data Visualisation with JBrowse" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:14 +0000" />
+<meta name="DC.creator" content="Helena Rasche" />
+<meta name="DC.creator" content="Saskia Hiltemann" />
+<meta name="DC.creator" content="Erasmus+ Programme" />
+
         
         
         
         
         
         <meta name="description" content="Training material for data visualisation in Galaxy" />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Genomic Data Visualisation with JBrowse" />
         <meta property="og:description" content="Training material for data visualisation in Galaxy" />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -49,6 +60,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -104,41 +150,6 @@
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
             </a>
         
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/jbrowse/tutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
 
         <div class="dropdown-item">
             <div>
@@ -237,7 +248,11 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "accessMode": [
     "textual",
     "visual"
@@ -254,10 +269,10 @@
     "alternativeText",
     "tableOfContents"
   ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -270,7 +285,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:14 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Genomic Data Visualisation with JBrowse",
   "interactivityType": "mixed",
@@ -295,26 +310,28 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Visualisation",
     "description": "Training material for data visualisation in Galaxy",
     "url": "https://training.galaxyproject.org//training-material/topics/visualisation/"
   },
-  "courseCode": "visualisation / jbrowse / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Genomic Data Visualisation with JBrowse' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/visualisation/tutorials/jbrowse/tutorial.html",
   "timeRequired": "PT1H",
+  "keywords": "visualisation",
   "description": "The questions this  addresses are:\n - How can I visualise features or blast data?\n - How can I visualise sequencing data in a workflow\n\n\\nThe objectives are:\n - Build several visualisations in JBrowse\n - Have basic familiarity with moving around JBrowse, and loading several data tracks\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
@@ -326,27 +343,142 @@
       }
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "name": "Erasmus+ Programme",
+      "image": "https://avatars.githubusercontent.com/erasmusplus",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "name": "Erasmus+ Programme",
+      "image": "https://avatars.githubusercontent.com/erasmusplus",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -364,15 +496,23 @@
     <h1 data-toc-skip>Genomic Data Visualisation with JBrowse</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
 
 
 <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>  Add Contributions!</a>
+
+<a href="/training-material/hall-of-fame/erasmusplus/" class="contributor-badge contributor-erasmusplus"><img src="https://avatars.githubusercontent.com/erasmusplus?s=27" alt="Avatar">Erasmus+ Programme</a>
+
+
+
+	</div>
 
 </div>
 
@@ -443,7 +583,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.3591856">
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.3591856">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -459,12 +599,39 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/visualisation/tutorials/jbrowse/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
             
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 12, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Dec 14, 2021 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -480,7 +647,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
@@ -549,7 +716,7 @@ https://zenodo.org/record/3591856/files/variants.vcf
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
     </li>
   </ol>
 
@@ -765,7 +932,7 @@ directly in your templating</p>
 <p>Next we will add a sequencing dataset, a BAM file which maps some sequencing <span class="notranslate">reads</span> against various locations along the genome. JBrowse helpfully highlights which <span class="notranslate">reads</span> have <span class="notranslate">mapping</span> issues, and any changes in bases between the <span class="notranslate">reads</span> and the genome. We “Autogenerate a SNP track”, which produces an extra track we can enable in JBrowse. This track <span class="notranslate">reads</span> the same BAM file used for visualising <span class="notranslate">reads</span>, and then produces a SNP and coverage visualisation. <strong>NB</strong>: This only works for small BAM files, if your files are large (&gt;200 Mb), then you should consider generating these coverage and SNP tracks by other means (e.g. <code class="language-plaintext highlighter-rouge">bamCoverage</code> and <code class="language-plaintext highlighter-rouge">FreeBayes</code> or similar tools) as it will be significantly faster. You can learn more about generating these files in <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html">the <span class="notranslate">Mapping</span> tutorial</a>.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-task-description"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Task description</h3>
+  <h3 id="hands_on-hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
 
   <ol>
     <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.9+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.9+galaxy0"><strong>JBrowse</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.9+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters:
@@ -952,11 +1119,14 @@ directly in your templating</p>
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/visualisation/faqs/">FAQ page for the Visualisation topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/visualisation/faqs/">FAQ page for the Visualisation topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                 
+
+                
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -966,7 +1136,9 @@ directly in your templating</p>
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -996,12 +1168,10 @@ directly in your templating</p>
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Helena Rasche, Saskia Hiltemann, 2021 <b>Genomic Data Visualisation with JBrowse (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/visualisation/tutorials/jbrowse/tutorial.html">https://training.galaxyproject.org/training-material/topics/visualisation/tutorials/jbrowse/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Helena Rasche, Saskia Hiltemann, Erasmus+ Programme, 2021 <b>Genomic Data Visualisation with JBrowse (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/visualisation/tutorials/jbrowse/tutorial.html">https://training.galaxyproject.org/training-material/topics/visualisation/tutorials/jbrowse/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1016,11 +1186,11 @@ directly in your templating</p>
 
                 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code id="citation-code">@misc{visualisation-jbrowse,
-author = "Helena Rasche and Saskia Hiltemann",
+author = "Helena Rasche and Saskia Hiltemann and Erasmus+ Programme",
 title = "Genomic Data Visualisation with JBrowse (Galaxy Training Materials)",
 year = "2021",
-month = "03",
-day = "12"
+month = "12",
+day = "14"
 url = "\url{https://training.galaxyproject.org/training-material/topics/visualisation/tutorials/jbrowse/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1040,6 +1210,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

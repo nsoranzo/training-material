@@ -18,15 +18,26 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Whole transcriptome analysis of Arabidopsis thaliana" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:17 +0000" />
+<meta name="DC.creator" content="Cristóbal Gallardo" />
+<meta name="DC.creator" content="Pavankumar Videm" />
+<meta name="DC.creator" content="Beatriz Serrano-Solano" />
+
         
         
         
         
         
         <meta name="description" content="Training material for all kinds of transcriptomics analysis." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Whole transcriptome analysis of Arabidopsis thaliana" />
         <meta property="og:description" content="Training material for all kinds of transcriptomics analysis." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -49,6 +60,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -104,41 +150,6 @@
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
             </a>
         
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
 
         <div class="dropdown-item">
             <div>
@@ -237,7 +248,11 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "accessMode": [
     "textual",
     "visual"
@@ -254,10 +269,10 @@
     "alternativeText",
     "tableOfContents"
   ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -270,7 +285,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:17 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Whole transcriptome analysis of Arabidopsis thaliana",
   "interactivityType": "mixed",
@@ -295,27 +310,28 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Transcriptomics",
     "description": "Training material for all kinds of transcriptomics analysis.",
     "url": "https://training.galaxyproject.org//training-material/topics/transcriptomics/"
   },
-  "courseCode": "transcriptomics / mirna-target-finder / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Whole transcriptome analysis of Arabidopsis thaliana' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html",
   "timeRequired": "PT2H",
-  "keywords": "miRNA, plants",
+  "keywords": "transcriptomics, miRNA, plants",
   "description": "The questions this  addresses are:\n - Which miRNAs are upregulated in response to brassinosteroids?\n - Which genes are potential target of brassinosteroid-induced miRNAs?\n\n\\nThe objectives are:\n - Perform miRNA differential expression analysis\n - Understand the quasi-mapping-based Salmon method for quantifying the expression of transcripts using RNA-Seq data\n - Idenfity potential miRNAs involved in brassinosteroid-mediated regulation networks\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
@@ -327,7 +343,8 @@
       }
     },
     {
-      "@type": "Course",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
       "name": "Quality Control",
       "description": "Slides for 'Quality Control' tutorial",
@@ -341,7 +358,8 @@
       }
     },
     {
-      "@type": "Course",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
       "name": "Quality Control",
       "description": "Hands-on for 'Quality Control' tutorial",
@@ -355,21 +373,8 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
-      "name": "Quality Control",
-      "description": "Slides for 'Quality Control' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
       "name": "Mapping",
       "description": "Slides for 'Mapping' tutorial",
@@ -383,7 +388,8 @@
       }
     },
     {
-      "@type": "Course",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
       "name": "Mapping",
       "description": "Hands-on for 'Mapping' tutorial",
@@ -395,51 +401,136 @@
         "name": "Galaxy Training Network",
         "url": "https://galaxyproject.org/teach/gtn/"
       }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
-      "name": "Mapping",
-      "description": "Slides for 'Mapping' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
     }
-  ],
-  "hasPart": [
-
   ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Cristóbal Gallardo"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "name": "Cristóbal Gallardo",
+      "image": "https://avatars.githubusercontent.com/gallardoalba",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Pavankumar Videm"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "name": "Pavankumar Videm",
+      "image": "https://avatars.githubusercontent.com/pavanvidem",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Beatriz Serrano-Solano"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/beatrizserrano/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/beatrizserrano/",
+      "name": "Beatriz Serrano-Solano",
+      "image": "https://avatars.githubusercontent.com/beatrizserrano",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Cristóbal Gallardo"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "name": "Cristóbal Gallardo",
+      "image": "https://avatars.githubusercontent.com/gallardoalba",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Pavankumar Videm"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "name": "Pavankumar Videm",
+      "image": "https://avatars.githubusercontent.com/pavanvidem",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Beatriz Serrano-Solano"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/beatrizserrano/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/beatrizserrano/",
+      "name": "Beatriz Serrano-Solano",
+      "image": "https://avatars.githubusercontent.com/beatrizserrano",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -464,18 +555,23 @@
     <h1 data-toc-skip>Whole transcriptome analysis of Arabidopsis thaliana</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
+
 
 
 <a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
 
 
+
 <a href="/training-material/hall-of-fame/beatrizserrano/" class="contributor-badge contributor-beatrizserrano"><img src="https://avatars.githubusercontent.com/beatrizserrano?s=27" alt="Avatar">Beatriz Serrano-Solano</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>  Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -604,7 +700,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" href="https://zenodo.org/record/4710649">
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/4710649">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -629,13 +725,74 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/transcriptomics/tutorials/mirna-target-finder/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/transcriptomics/mirna-target-finder/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (July 2021)
+            </a>
+        </li>
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/transcriptomics/mirna-target-finder/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (April 2021)
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -645,8 +802,6 @@
             </a>
         </li>
     
-    
-        
     
         
     
@@ -767,6 +922,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
@@ -788,6 +945,12 @@
         </a>
         
     
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
         
     
         
@@ -822,7 +985,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
@@ -1940,14 +2103,17 @@ https://zenodo.org/record/4710649/files/SRR7779229_BRL3_m<span class="notranslat
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/transcriptomics/faqs/">FAQ page for the Transcriptomics topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/transcriptomics/faqs/">FAQ page for the Transcriptomics topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                
 
                 
                 <h1 data-toc-skip>Useful literature</h1>
                 <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/transcriptomics#references">here</a>.</p>
                 
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -1969,7 +2135,9 @@ https://zenodo.org/record/4710649/files/SRR7779229_BRL3_m<span class="notranslat
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -1998,8 +2166,6 @@ https://zenodo.org/record/4710649/files/SRR7779229_BRL3_m<span class="notranslat
                         });
                     })(window, document);
                 </script>
-
-
 
                 <h1>Citing this Tutorial</h1>
                 <p>
@@ -2043,6 +2209,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

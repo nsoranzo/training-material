@@ -18,15 +18,26 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Visualisation with Circos" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:17 +0000" />
+<meta name="DC.creator" content="Saskia Hiltemann" />
+<meta name="DC.creator" content="Helena Rasche" />
+<meta name="DC.creator" content="Cristóbal Gallardo" />
+
         
         
         
         
         
         <meta name="description" content="Training material for data visualisation in Galaxy" />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Visualisation with Circos" />
         <meta property="og:description" content="Training material for data visualisation in Galaxy" />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -49,6 +60,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -104,41 +150,6 @@
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
             </a>
         
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/visualisation/tutorials/circos/tutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
 
         <div class="dropdown-item">
             <div>
@@ -237,7 +248,11 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "accessMode": [
     "textual",
     "visual"
@@ -254,10 +269,10 @@
     "alternativeText",
     "tableOfContents"
   ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -270,7 +285,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:17 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Visualisation with Circos",
   "interactivityType": "mixed",
@@ -295,26 +310,28 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Visualisation",
     "description": "Training material for data visualisation in Galaxy",
     "url": "https://training.galaxyproject.org//training-material/topics/visualisation/"
   },
-  "courseCode": "visualisation / circos / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Visualisation with Circos' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/visualisation/tutorials/circos/tutorial.html",
   "timeRequired": "PT2H",
+  "keywords": "visualisation",
   "description": "The questions this  addresses are:\n - What can the Circos Galaxy tool be used for?\n - How can I visualise common genomic datasets using Circos?\n\n\\nThe objectives are:\n - Create a number of Circos plots using the Galaxy tool\n - Familiarise yourself with the various different track types\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
       "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
@@ -326,35 +343,142 @@
       }
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Cristóbal Gallardo"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "name": "Cristóbal Gallardo",
+      "image": "https://avatars.githubusercontent.com/gallardoalba",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Cristóbal Gallardo"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "name": "Cristóbal Gallardo",
+      "image": "https://avatars.githubusercontent.com/gallardoalba",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -372,18 +496,23 @@
     <h1 data-toc-skip>Visualisation with Circos</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
+
 
 
 <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
 
 
+
 <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>  Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -454,7 +583,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" href="https://zenodo.org/record/4494146">
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/4494146">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -479,18 +608,77 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/visualisation/tutorials/circos/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/visualisation/circos/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/visualisation/circos/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
-    
-        
     
         
     
@@ -565,11 +753,11 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
             Galaxy@GenOuest
         </a>
-        
-    
         
     
         
@@ -645,6 +833,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://singlecell.usegalaxy.eu/" title="Single Cell Omics workbench">
             Single Cell Omics workbench
         </a>
@@ -687,6 +877,12 @@
         
     
         
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
     
         
     
@@ -718,7 +914,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
@@ -1012,7 +1208,7 @@ https://zenodo.org/record/4494146/files/hg18_karyotype_withbands.txt
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
 
       <!--SNIPPET-->
       <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
@@ -1232,7 +1428,7 @@ The full definition of <code class="language-plaintext highlighter-rouge">hg18</
 
   <ol>
     <li>
-      <p>Click <strong>Re-run</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code>)</p>
+      <p>Click <strong>Re-run</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot ideogram</code>)</p>
     </li>
     <li>Add a new Link Track for the SV data, colouring by SV type:
       <ul>
@@ -1323,7 +1519,7 @@ at a glance that there are more intrachromosomal SVs (black) than interchromosom
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
     </li>
     <li>
       <p><strong>Change</strong> the following tool parameters:</p>
@@ -1482,7 +1678,7 @@ chr1	72017	72017	-0.1353417	0
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the Circos plot containing the SV track <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot SVs</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the Circos plot containing the SV track <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot SVs</code>)</p>
     </li>
     <li>Add a new scatterplot track to the image
       <ul>
@@ -1547,7 +1743,7 @@ all at once, rather, you build it up step by step and frequently check the outpu
         </blockquote>
       </blockquote>
     </li>
-    <li><strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> the tool, changing the following parameters.
+    <li><strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> the tool, changing the following parameters.
       <ul>
         <li>In <em>“Link Tracks”</em>:
           <ul>
@@ -1575,7 +1771,7 @@ all at once, rather, you build it up step by step and frequently check the outpu
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
     </li>
     <li>
       <p>In the <strong>2D data track</strong> of the CNV track we just created, add the following rules:</p>
@@ -1662,7 +1858,7 @@ We can do this as follows:</p>
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
     </li>
     <li>In the <strong>2D data track</strong> of the CNV track we just created, add plot axes as follows:
       <ul>
@@ -1769,7 +1965,7 @@ chr1	110905	110905	0.9918569
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot CopyNumber</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot CopyNumber</code>)</p>
     </li>
     <li>Add a new scatterplot track to the image
       <ul>
@@ -1878,7 +2074,7 @@ There is a parameter of the link track type called <em>Bezier</em>, which contro
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot BAF</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot BAF</code>)</p>
     </li>
     <li>
       <p>Change the Bezier parameter of the SV track:</p>
@@ -1936,7 +2132,7 @@ There is a parameter of the link track type called <em>Bezier</em>, which contro
 
       <ol>
         <li>
-          <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+          <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
         </li>
         <li>
           <p>Configure two separate link tracks:</p>
@@ -2090,7 +2286,7 @@ https://zenodo.org/record/4494146/files/debate_slices.tab
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
 
       <!--SNIPPET-->
       <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
@@ -2186,7 +2382,7 @@ richardson  251  750    stroke_thickness=5,stroke_color=white
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot karyotype</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot karyotype</code>)</p>
     </li>
     <li>Add highlights to the ideogram:
       <ul>
@@ -2264,7 +2460,7 @@ huckabee	525	525	clinton	750	750
 
   <ol>
     <li>
-      <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot highlights</code>)</p>
+      <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run (<code class="language-plaintext highlighter-rouge">Circos Plot highlights</code>)</p>
     </li>
     <li>
       <p>Add a link track:</p>
@@ -2318,7 +2514,7 @@ huckabee	525	525	clinton	750	750
 
       <ol>
         <li>
-          <p>Hit <strong>Rerun</strong> <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
+          <p>Hit <strong>Rerun</strong> <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> on the previous Circos <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</p>
         </li>
         <li>
           <p>Add rules to the link track:</p>
@@ -2398,7 +2594,7 @@ huckabee	525	525	clinton	750	750
 https://zenodo.org/record/4494146/files/highlights.tab
 </code></pre></div>      </div>
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
     </li>
     <li>Rename the datasets</li>
     <li>
@@ -2750,11 +2946,14 @@ https://zenodo.org/record/4494146/files/highlights.tab
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/visualisation/faqs/">FAQ page for the Visualisation topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/visualisation/faqs/">FAQ page for the Visualisation topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                 
+
+                
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -2766,7 +2965,9 @@ https://zenodo.org/record/4494146/files/highlights.tab
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -2795,8 +2996,6 @@ https://zenodo.org/record/4494146/files/highlights.tab
                         });
                     })(window, document);
                 </script>
-
-
 
                 <h1>Citing this Tutorial</h1>
                 <p>
@@ -2840,6 +3039,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

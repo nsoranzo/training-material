@@ -18,15 +18,25 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="How to reproduce published Galaxy analyses" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:10 +0000" />
+<meta name="DC.creator" content="Melanie Föll" />
+<meta name="DC.creator" content="Anne Fouilloux" />
+
         
         
         
         
         
         <meta name="description" content="Galaxy is a scientific workflow, data integration, and da..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: How to reproduce published Galaxy analyses" />
         <meta property="og:description" content="Galaxy is a scientific workflow, data integration, and da..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -49,6 +59,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -104,41 +149,6 @@
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
             </a>
         
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-reproduce/tutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
 
         <div class="dropdown-item">
             <div>
@@ -237,7 +247,11 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "accessMode": [
     "textual",
     "visual"
@@ -254,10 +268,10 @@
     "alternativeText",
     "tableOfContents"
   ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -270,7 +284,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:10 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "How to reproduce published Galaxy analyses",
   "interactivityType": "mixed",
@@ -295,44 +309,114 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Introduction to Galaxy Analyses",
     "description": "Galaxy is a scientific workflow, data integration, and data and analysis persistence and publishing platform that aims to make computational biology accessible to research scientists that do not have computer programming experience. ",
     "url": "https://training.galaxyproject.org//training-material/topics/introduction/"
   },
-  "courseCode": "introduction / galaxy-reproduce / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'How to reproduce published Galaxy analyses' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/introduction/tutorials/galaxy-reproduce/tutorial.html",
   "timeRequired": "PT1H",
+  "keywords": "introduction",
   "description": "The questions this  addresses are:\n - How to reproduce published Galaxy results (workflows and histories)\n\n\\nThe objectives are:\n - Learn how to load published data into Galaxy\n - Learn how to run a published Galaxy workflow\n - Learn how histories can be inspected and re-used.\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Melanie Föll"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/foellmelanie/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/foellmelanie/",
+      "name": "Melanie Föll",
+      "image": "https://avatars.githubusercontent.com/foellmelanie",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-1887-7543",
+      "orcid": "https://orcid.org/0000-0002-1887-7543"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Melanie Föll"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/foellmelanie/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/foellmelanie/",
+      "name": "Melanie Föll",
+      "image": "https://avatars.githubusercontent.com/foellmelanie",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-1887-7543",
+      "orcid": "https://orcid.org/0000-0002-1887-7543"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -343,7 +427,7 @@
       "url": "https://training.galaxyproject.org//training-material/topics/introduction/"
     }
   ],
-  "skillLevel": "Introductory"
+  "educationalLevel": "Beginner"
 }
 </script>
 
@@ -351,15 +435,19 @@
     <h1 data-toc-skip>How to reproduce published Galaxy analyses</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/foellmelanie/" class="contributor-badge contributor-foellmelanie"><img src="https://avatars.githubusercontent.com/foellmelanie?s=27" alt="Avatar">Melanie Föll</a>
+
 
 
 <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>  Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -426,7 +514,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" href="https://zenodo.org/record/1319069/files/iris.csv">
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/1319069/files/iris.csv">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -451,13 +539,40 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/introduction/tutorials/galaxy-reproduce/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -467,8 +582,6 @@
             </a>
         </li>
     
-    
-        
     
         
     
@@ -543,11 +656,15 @@
         
     
         
-        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
-            Galaxy@GenOuest
+        <a class="dropdown-item" href="https://galaxy.mesocentre.uca.fr" title="Galaxy@AuBi">
+            Galaxy@AuBi
         </a>
         
     
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
         
     
         
@@ -627,6 +744,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://singlecell.usegalaxy.eu/" title="Single Cell Omics workbench">
             Single Cell Omics workbench
         </a>
@@ -669,6 +788,12 @@
         
     
         
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
     
         
     
@@ -700,7 +825,7 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
-                
+                 
 
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
@@ -797,7 +922,7 @@ You can find more detailed information about this dataset on its dedicated <a hr
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
     </li>
     <li>
       <p><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the dataset to <code class="language-plaintext highlighter-rouge">iris</code></p>
@@ -927,7 +1052,7 @@ In WorkflowHub there is an option to directly run a <span class="notranslate">wo
 <p>By starting the <span class="notranslate">workflow</span> all jobs are sent to the <span class="notranslate">Galaxy</span> cluster for analysis. Sometimes it can take a bit until the datasets show up in your history. The jobs are processed one after the other or in parallel if the same input is used for several steps. Grey means waiting to run, yellow means running and green means finished. Red means there was an error.</p>
 
 <!--SNIPPET-->
-<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-troubleshooting-errors"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Troubleshooting errors</h3>  <p>When someting goes wrong in <span class="notranslate">Galaxy</span>, there are a number of things you can do to find out what it was. Error messages can help you figure out whether it was a problem with one of the settings of the tool, or with the input data, or maybe there is a bug in the tool itself and the problem should be reported. Below are the steps you can follow to troubleshoot your <span class="notranslate">Galaxy</span> errors.</p>  <ol>  <li><strong>Expand</strong> the red history dataset by clicking on it.    <ul>      <li>Sometime you can already see an error message here</li>    </ul>  </li>  <li>    <p><strong>View the error message</strong> by clicking on the <strong>bug icon</strong> <i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-bug</span></p>  </li>  <li><strong>Check the logs.</strong> Output (stdout) and error logs (stderr) of the tool are available:    <ul>      <li>Expand the history item</li>      <li>Click on the <i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> icon</li>      <li>Scroll down to the <strong>Job Information</strong> section to view the 2 logs:        <ul>          <li>Tool Standard Output</li>          <li>Tool Standard Error</li>        </ul>      </li>    </ul>  </li>  <li><strong>Submit a bug report!</strong> If you are still unsure what the problem is.    <ul>      <li>Click on the bug icon <i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-bug</span></li>      <li>Write down any information you think might help solve the problem        <ul>          <li>See <a href="/training-material/faqs/gtn/issues_galaxy.html">this FAQ</a> on how to write good bug reports</li>        </ul>      </li>      <li>Click <strong><i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-bug</span> Report</strong> button</li>      <li>In the meantime, you can ask for help in the <a href="https://gitter.im/galaxyproject/Lobby"><span class="notranslate">Galaxy</span> Gitter Channel</a> or the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a>, or you can browse the <a href="https://help.galaxyproject.org/"><span class="notranslate">Galaxy</span> Help Forum</a> to see if others have encountered the same problem before.</li>    </ul>  </li></ol></blockquote>
+<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-troubleshooting-errors"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Troubleshooting errors</h3>  <p>When something goes wrong in <span class="notranslate">Galaxy</span>, there are a number of things you can do to find out what it was. Error messages can help you figure out whether it was a problem with one of the settings of the tool, or with the input data, or maybe there is a bug in the tool itself and the problem should be reported. Below are the steps you can follow to troubleshoot your <span class="notranslate">Galaxy</span> errors.</p>  <ol>  <li><strong>Expand</strong> the red history dataset by clicking on it.    <ul>      <li>Sometimes you can already see an error message here</li>    </ul>  </li>  <li>    <p><strong>View the error message</strong> by clicking on the <strong>bug icon</strong> <i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-bug</span></p>  </li>  <li><strong>Check the logs.</strong> Output (stdout) and error logs (stderr) of the tool are available:    <ul>      <li>Expand the history item</li>      <li>Click on the <i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> icon</li>      <li>Scroll down to the <strong>Job Information</strong> section to view the 2 logs:        <ul>          <li>Tool Standard Output</li>          <li>Tool Standard Error</li>        </ul>      </li>    </ul>  </li>  <li><strong>Submit a bug report!</strong> If you are still unsure what the problem is.    <ul>      <li>Click on the bug icon <i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-bug</span></li>      <li>Write down any information you think might help solve the problem        <ul>          <li>See <a href="/training-material/faqs/galaxy/analysis_troubleshooting_reporting.html">this FAQ</a> on how to write good bug reports</li>        </ul>      </li>      <li>Click <strong><i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-bug</span> Report</strong> button</li>    </ul>  </li>  <li><strong>Ask for help!</strong>    <ul>      <li>Where?        <ul>          <li>In the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a></li>          <li>In the <a href="https://gitter.im/galaxyproject/Lobby"><span class="notranslate">Galaxy</span> Gitter Channel</a></li>          <li>Browse the <a href="https://help.galaxyproject.org/"><span class="notranslate">Galaxy</span> Help Forum</a> to see if others have encountered the same problem before (or post your question).</li>        </ul>      </li>      <li>When asking for help, it is useful to <a href="/training-material/faqs/galaxy/histories_sharing.html">share a link to your history</a></li>    </ul>  </li></ol></blockquote>
 
 <blockquote class="comment">
   <h3 id="comment-the-tool-stays-grey"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> The tool stays grey</h3>
@@ -1012,7 +1137,7 @@ In WorkflowHub there is an option to directly run a <span class="notranslate">wo
       <p><strong>Rerun</strong> the Scatterplot to plot Sepal length vs. Petal length</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-re-running-a-tool"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Re-running a tool</h3>  <ol>  <li><strong>Expand</strong> one of the output datasets of the tool (by clicking on it)</li>  <li><strong>Click</strong> re-run <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> the tool</li></ol>  <p>This is useful if you want to run the tool again but with slightly different paramters, or if you just want to check which parameter setting you used.</p></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-re-running-a-tool"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Re-running a tool</h3>  <ol>  <li><strong>Expand</strong> one of the output datasets of the tool (by clicking on it)</li>  <li><strong>Click</strong> re-run <i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> the tool</li></ol>  <p>This is useful if you want to run the tool again but with slightly different paramters, or if you just want to check which parameter setting you used.</p></blockquote>
     </li>
   </ol>
 
@@ -1038,7 +1163,7 @@ In WorkflowHub there is an option to directly run a <span class="notranslate">wo
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-import-an-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Import an history</h3>  <ol>  <li>Open the link to the shared history</li>  <li>Click on the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> <em>Import history</em> button on the top right</li>  <li>Enter a title for the new history</li>  <li>Click on <strong>Import</strong></li></ol></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-a-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing a history</h3>  <ol>  <li>Open the link to the shared history</li>  <li>Click on the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> <em>Import history</em> button on the top right</li>  <li>Enter a title for the new history</li>  <li>Click on <strong>Import</strong></li></ol></blockquote>
     </li>
   </ol>
 
@@ -1119,11 +1244,14 @@ the scatter plot that color is linked to the price of the diamond. So color also
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/introduction/faqs/">FAQ page for the Introduction to Galaxy Analyses topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/introduction/faqs/">FAQ page for the Introduction to Galaxy Analyses topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                 
+
+                
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -1135,7 +1263,9 @@ the scatter plot that color is linked to the price of the diamond. So color also
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -1164,8 +1294,6 @@ the scatter plot that color is linked to the price of the diamond. So color also
                         });
                     })(window, document);
                 </script>
-
-
 
                 <h1>Citing this Tutorial</h1>
                 <p>
@@ -1209,6 +1337,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">
